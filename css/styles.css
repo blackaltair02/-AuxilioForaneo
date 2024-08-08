@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(150deg, #6c3483, #58d68d);
+    height: 100vh;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.container {
+    width: 100%;
+    max-width: 450px; /* Ancho máximo para dispositivos móviles */
+    background-color: #2c2f35;
+    padding: 50px 30px 70px; /* Ajuste del padding para dispositivos móviles */
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-content h1 {
+    font-size: 24px; /* Tamaño de fuente reducido para dispositivos móviles */
+    margin-bottom: 40px; /* Reducción del espacio entre elementos */
+    color: #ffffff;
+    position: relative;
+}
+
+.form-content h1::after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: #04bd7d;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center; /* Alineación vertical para íconos */
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.input-field i {
+    margin-left: 10px;
+    color: #04bd7d;
+}
+
+form p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px; /* Tamaño de fuente reducido para dispositivos móviles */
+}
+
+form p a {
+    color: #04bd7d;
+    margin-left: 5px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 14px; /* Tamaño de fuente reducido para dispositivos móviles */
+    background-color: #04bd7d;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input-group {
+    height: auto; /* Altura automática para adaptarse al contenido */
+}
+
+.btn-field button.disable {
+    background-color: #eaeaea;
+    color: #2c2f35;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px 60px; /* Ajuste de padding para dispositivos móviles */
+    }
+
+    .form-content h1 {
+        font-size: 20px; /* Tamaño de fuente aún más reducido para dispositivos móviles */
+        margin-bottom: 30px; /* Reducción adicional del espacio entre elementos */
+    }
+
+    input {
+        padding: 12px; /* Ajuste del padding para input en dispositivos móviles */
+    }
+
+    form p {
+        font-size: 11px; /* Tamaño de fuente reducido adicional para dispositivos móviles */
+    }
+
+    .btn-field button {
+        font-size: 12px; /* Tamaño de fuente reducido adicional para dispositivos móviles */
+        height: 36px; /* Altura reducida para botones en dispositivos móviles */
+    }
+}

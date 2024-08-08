@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #6c3483, #58d68d);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos en dispositivos móviles */
+    padding: 10px; /* Espaciado interior para dispositivos móviles */
+}
+
+.card {
+    background: linear-gradient(150deg, #8a51a0, #92e7b6);
+    margin: 10px;
+    padding: 15px; /* Ajuste de padding para dispositivos móviles */
+    width: calc(50% - 20px); /* Dos tarjetas por fila en dispositivos móviles */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border-style: double;
+    border-color: #1b1a1a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 36px; /* Tamaño de fuente reducido para dispositivos móviles */
+    -webkit-text-stroke: 1px black; /* Grosor del trazo de texto reducido */
+}
+
+h2 {
+    color: #333;
+    font-size: 20px; /* Tamaño de fuente ajustado para dispositivos móviles */
+}
+
+p {
+    color: #666;
+    font-size: 14px; /* Tamaño de fuente reducido para dispositivos móviles */
+}
+
+/* Estilos específicos del dashboard */
+.header {
+    background: linear-gradient(150deg, #8a51a0, #92e7b6);
+    color: #fff;
+    padding: 15px; /* Ajuste de padding para dispositivos móviles */
+    text-align: center;
+    border-style: double;
+    border-color: #1b1a1a;
+    border-radius: 12px;
+    margin-bottom: 20px; /* Margen inferior reducido para dispositivos móviles */
+}
+
+.sidebar {
+    background: linear-gradient(150deg, #8a51a0, #92e7b6);
+    color: #1b1a1a;
+    padding: 15px; /* Ajuste de padding para dispositivos móviles */
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    border-style: double;
+    border-color: #1b1a1a;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* Una tarjeta por fila en dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente aún más reducido para dispositivos móviles */
+    }
+
+    h2 {
+        font-size: 18px; /* Tamaño de fuente aún más reducido para dispositivos móviles */
+    }
+
+    p {
+        font-size: 13px; /* Tamaño de fuente aún más reducido para dispositivos móviles */
+    }
+
+    .header,
+    .sidebar {
+        padding: 10px; /* Ajuste de padding aún más compacto para dispositivos móviles */
+        margin-bottom: 10px; /* Margen inferior aún más reducido para dispositivos móviles */
+    }
+}

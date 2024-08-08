@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../photos/Fonfo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos en dispositivos móviles */
+}
+
+.card {
+    background: linear-gradient(150deg, #ffffff, #a77fe8);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Dos tarjetas por fila en dispositivos móviles */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border-style: double;
+    border-color: #1b1a1a;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 30px; /* Tamaño de fuente reducido para dispositivos móviles */
+    -webkit-text-stroke: 1px black; /* Grosor del trazo de texto reducido */
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Estilos específicos del dashboard */
+.header {
+    background: rgb(84, 62, 103);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-style: double;
+    border-color: #1b1a1a;
+    border-radius: 12px;
+}
+
+.sidebar {
+    background: linear-gradient(150deg, #6c80db, #1b1a1a);
+    color: #1b1a1a;
+    padding: 20px;
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    border-style: double;
+    border-color: #1b1a1a;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100%; /* Ancho máximo del carrusel */
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-style: double;
+    border-color: #1b1a1a;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%; /* Imágenes de ancho completo */
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); /* Una tarjeta por fila en dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente aún más reducido para dispositivos móviles */
+    }
+
+    .carousel {
+        margin: 10px auto; /* Menos margen en dispositivos móviles */
+    }
+
+    .carousel-control {
+        font-size: 18px; /* Tamaño de fuente reducido para los controles en móviles */
+        padding: 8px;
+    }
+}

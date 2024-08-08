@@ -1,0 +1,36 @@
+body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        background: linear-gradient(150deg, #6c3483, #58d68d) ;
+        height: 100vh;
+        box-sizing: border-box;
+        text-decoration: none;
+}
+
+.help div{
+border-style: double;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(150deg, #6c3483, #58d68d) ;;
+
+}
+.container{
+    font-size: medium;
+
+    border-style: groove;
+    width: 20%;
+    height: 80%;
+    background: linear-gradient(150deg, #6c3483, #58d68d) ;;
+}
+ul{
+    font-size: 25px;
+    
+}
+a{
+    color:black;
+}
+ul li{
+    color: azure;
+}
